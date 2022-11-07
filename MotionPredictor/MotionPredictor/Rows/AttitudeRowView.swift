@@ -20,19 +20,24 @@ struct AttitudeRowView: View {
 
             Text("Attitude")
 
+            Spacer()
+
             if let attitude = attitude {
                 VStack {
-                    Text(String(describing: attitude.pitch))
+                    Text(attitude.pitch.description.prefix(7))
                     Text("PITCH")
                 }
+                Spacer()
                 VStack {
-                    Text(String(describing: attitude.roll))
+                    Text(attitude.roll.description.prefix(7))
                     Text("ROLL")
                 }
+                Spacer()
                 VStack {
-                    Text(String(describing: attitude.yaw))
+                    Text(attitude.yaw.description.prefix(7))
                     Text("YAW")
                 }
+                Spacer()
             }
         }
     }

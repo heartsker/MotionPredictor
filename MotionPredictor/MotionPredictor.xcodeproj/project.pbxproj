@@ -7,29 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A9ACD125291984B500CF4686 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD124291984B500CF4686 /* RecordingView.swift */; };
+		A9ACD1272919AB8100CF4686 /* FileManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD1262919AB8100CF4686 /* FileManager.swift */; };
+		A9ACD12C2919B82100CF4686 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD12B2919B82100CF4686 /* ActivityViewController.swift */; };
+		A9ACD12E2919BE5F00CF4686 /* RecordMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD12D2919BE5F00CF4686 /* RecordMotionView.swift */; };
+		A9ACD1302919BE9200CF4686 /* TestMotionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD12F2919BE9200CF4686 /* TestMotionView.swift */; };
+		A9ACD1322919BEF400CF4686 /* Types.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9ACD1312919BEF400CF4686 /* Types.swift */; };
 		B22368CB29195C720035315A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CA29195C720035315A /* RowView.swift */; };
 		B22368CD29195CD40035315A /* CoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CC29195CD40035315A /* CoordinatesView.swift */; };
 		B22368CF2919603E0035315A /* AttitudeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CE2919603E0035315A /* AttitudeRowView.swift */; };
-		B22368D12919612F0035315A /* HeadingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368D02919612F0035315A /* HeadingRowView.swift */; };
 		B2BB7B5E2918F169005592D4 /* MotionPredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B5D2918F169005592D4 /* MotionPredictorApp.swift */; };
 		B2BB7B602918F169005592D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B5F2918F169005592D4 /* ContentView.swift */; };
 		B2BB7B622918F16B005592D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BB7B612918F16B005592D4 /* Assets.xcassets */; };
 		B2BB7B652918F16B005592D4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BB7B642918F16B005592D4 /* Preview Assets.xcassets */; };
-		B2BB7B6C2918F189005592D4 /* RealtimeDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B6B2918F189005592D4 /* RealtimeDataView.swift */; };
+		B2BB7B6C2918F189005592D4 /* MotionDataView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B6B2918F189005592D4 /* MotionDataView.swift */; };
 		B2BB7B6E2918F756005592D4 /* MotionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B6D2918F756005592D4 /* MotionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A9ACD124291984B500CF4686 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		A9ACD1262919AB8100CF4686 /* FileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileManager.swift; sourceTree = "<group>"; };
+		A9ACD12A2919B18300CF4686 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A9ACD12B2919B82100CF4686 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		A9ACD12D2919BE5F00CF4686 /* RecordMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordMotionView.swift; sourceTree = "<group>"; };
+		A9ACD12F2919BE9200CF4686 /* TestMotionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestMotionView.swift; sourceTree = "<group>"; };
+		A9ACD1312919BEF400CF4686 /* Types.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Types.swift; sourceTree = "<group>"; };
 		B22368CA29195C720035315A /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		B22368CC29195CD40035315A /* CoordinatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesView.swift; sourceTree = "<group>"; };
 		B22368CE2919603E0035315A /* AttitudeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeRowView.swift; sourceTree = "<group>"; };
-		B22368D02919612F0035315A /* HeadingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingRowView.swift; sourceTree = "<group>"; };
 		B2BB7B5A2918F169005592D4 /* MotionPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BB7B5D2918F169005592D4 /* MotionPredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPredictorApp.swift; sourceTree = "<group>"; };
 		B2BB7B5F2918F169005592D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B2BB7B612918F16B005592D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B2BB7B642918F16B005592D4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B2BB7B6B2918F189005592D4 /* RealtimeDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeDataView.swift; sourceTree = "<group>"; };
+		B2BB7B6B2918F189005592D4 /* MotionDataView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionDataView.swift; sourceTree = "<group>"; };
 		B2BB7B6D2918F756005592D4 /* MotionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,12 +55,34 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A9ACD1282919AB9A00CF4686 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A9ACD1262919AB8100CF4686 /* FileManager.swift */,
+				B2BB7B6D2918F756005592D4 /* MotionModel.swift */,
+				A9ACD1312919BEF400CF4686 /* Types.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A9ACD1292919ABA900CF4686 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B2BB7B5F2918F169005592D4 /* ContentView.swift */,
+				A9ACD12D2919BE5F00CF4686 /* RecordMotionView.swift */,
+				A9ACD12B2919B82100CF4686 /* ActivityViewController.swift */,
+				A9ACD12F2919BE9200CF4686 /* TestMotionView.swift */,
+				A9ACD124291984B500CF4686 /* RecordingView.swift */,
+				B2BB7B6B2918F189005592D4 /* MotionDataView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		B22368C929195C600035315A /* Rows */ = {
 			isa = PBXGroup;
 			children = (
 				B22368CA29195C720035315A /* RowView.swift */,
 				B22368CE2919603E0035315A /* AttitudeRowView.swift */,
-				B22368D02919612F0035315A /* HeadingRowView.swift */,
 				B22368CC29195CD40035315A /* CoordinatesView.swift */,
 			);
 			path = Rows;
@@ -74,10 +107,10 @@
 		B2BB7B5C2918F169005592D4 /* MotionPredictor */ = {
 			isa = PBXGroup;
 			children = (
+				A9ACD12A2919B18300CF4686 /* Info.plist */,
 				B2BB7B5D2918F169005592D4 /* MotionPredictorApp.swift */,
-				B2BB7B5F2918F169005592D4 /* ContentView.swift */,
-				B2BB7B6B2918F189005592D4 /* RealtimeDataView.swift */,
-				B2BB7B6D2918F756005592D4 /* MotionModel.swift */,
+				A9ACD1292919ABA900CF4686 /* Views */,
+				A9ACD1282919AB9A00CF4686 /* Model */,
 				B22368C929195C600035315A /* Rows */,
 				B2BB7B612918F16B005592D4 /* Assets.xcassets */,
 				B2BB7B632918F16B005592D4 /* Preview Content */,
@@ -163,14 +196,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9ACD1302919BE9200CF4686 /* TestMotionView.swift in Sources */,
+				A9ACD12C2919B82100CF4686 /* ActivityViewController.swift in Sources */,
 				B2BB7B602918F169005592D4 /* ContentView.swift in Sources */,
-				B2BB7B6C2918F189005592D4 /* RealtimeDataView.swift in Sources */,
-				B22368D12919612F0035315A /* HeadingRowView.swift in Sources */,
+				B2BB7B6C2918F189005592D4 /* MotionDataView.swift in Sources */,
 				B22368CD29195CD40035315A /* CoordinatesView.swift in Sources */,
 				B2BB7B5E2918F169005592D4 /* MotionPredictorApp.swift in Sources */,
 				B22368CB29195C720035315A /* RowView.swift in Sources */,
 				B2BB7B6E2918F756005592D4 /* MotionModel.swift in Sources */,
+				A9ACD1322919BEF400CF4686 /* Types.swift in Sources */,
+				A9ACD1272919AB8100CF4686 /* FileManager.swift in Sources */,
+				A9ACD125291984B500CF4686 /* RecordingView.swift in Sources */,
 				B22368CF2919603E0035315A /* AttitudeRowView.swift in Sources */,
+				A9ACD12E2919BE5F00CF4686 /* RecordMotionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +340,7 @@
 				DEVELOPMENT_TEAM = XHRWYM4T65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionPredictor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -331,6 +370,7 @@
 				DEVELOPMENT_TEAM = XHRWYM4T65;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MotionPredictor/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
