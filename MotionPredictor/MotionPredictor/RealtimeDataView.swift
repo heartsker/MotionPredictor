@@ -11,30 +11,32 @@ struct RealtimeDataView: View {
 
     var body: some View {
         VStack(alignment: .leading, spacing: 16.0) {
+            Group {
+                // MARK: Attitude
+                AttitudeRowView(attitude: motionModel.attitude)
+                Divider()
 
-            // MARK: Attitude
+                // MARK: Gravity
+                RowView(imageName: "figure.fall", title: "Gravity", coordinates: motionModel.gravity)
+                Divider()
 
-            AttitudeRowView(attitude: motionModel.attitude)
+                // MARK: Heading
+                HeadingRowView(heading: motionModel.heading)
+                Divider()
+            }
+            Group {
+                // MARK: Magnetic field
+                RowView(imageName: "globe.europe.africa", title: "Magnetic field", coordinates: motionModel.magneticField)
+                Divider()
 
-            // MARK: Gravity
+                // MARK: Rotation rate
+                RowView(imageName: "rotate.3d", title: "Rotation rate", coordinates: motionModel.rotationRate)
+                Divider()
 
-            RowView(imageName: "figure.fall", title: "Gravity", coordinates: motionModel.gravity)
-
-            // MARK: Heading
-
-            HeadingRowView(heading: motionModel.heading)
-
-            // MARK: Magnetic field
-
-            RowView(imageName: "globe.europe.africa", title: "Magnetic field", coordinates: motionModel.magneticField)
-
-            // MARK: Rotation rate
-
-            RowView(imageName: "rotate.3d", title: "Rotation rate", coordinates: motionModel.rotationRate)
-
-            // MARK: User acceleration
-
-            RowView(imageName: "bolt.fill", title: "Acceleration", coordinates: motionModel.userAcceleration)
+                // MARK: User acceleration
+                RowView(imageName: "bolt.fill", title: "Acceleration", coordinates: motionModel.userAcceleration)
+                Divider()
+            }
         }
         .padding()
     }
