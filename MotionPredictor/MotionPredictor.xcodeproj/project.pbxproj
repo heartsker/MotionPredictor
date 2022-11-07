@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B22368CB29195C720035315A /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CA29195C720035315A /* RowView.swift */; };
+		B22368CD29195CD40035315A /* CoordinatesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CC29195CD40035315A /* CoordinatesView.swift */; };
+		B22368CF2919603E0035315A /* AttitudeRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368CE2919603E0035315A /* AttitudeRowView.swift */; };
+		B22368D12919612F0035315A /* HeadingRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B22368D02919612F0035315A /* HeadingRowView.swift */; };
 		B2BB7B5E2918F169005592D4 /* MotionPredictorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B5D2918F169005592D4 /* MotionPredictorApp.swift */; };
 		B2BB7B602918F169005592D4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2BB7B5F2918F169005592D4 /* ContentView.swift */; };
 		B2BB7B622918F16B005592D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B2BB7B612918F16B005592D4 /* Assets.xcassets */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B22368CA29195C720035315A /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		B22368CC29195CD40035315A /* CoordinatesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatesView.swift; sourceTree = "<group>"; };
+		B22368CE2919603E0035315A /* AttitudeRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AttitudeRowView.swift; sourceTree = "<group>"; };
+		B22368D02919612F0035315A /* HeadingRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadingRowView.swift; sourceTree = "<group>"; };
 		B2BB7B5A2918F169005592D4 /* MotionPredictor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MotionPredictor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B2BB7B5D2918F169005592D4 /* MotionPredictorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionPredictorApp.swift; sourceTree = "<group>"; };
 		B2BB7B5F2918F169005592D4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -36,6 +44,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B22368C929195C600035315A /* Rows */ = {
+			isa = PBXGroup;
+			children = (
+				B22368CA29195C720035315A /* RowView.swift */,
+				B22368CE2919603E0035315A /* AttitudeRowView.swift */,
+				B22368D02919612F0035315A /* HeadingRowView.swift */,
+				B22368CC29195CD40035315A /* CoordinatesView.swift */,
+			);
+			path = Rows;
+			sourceTree = "<group>";
+		};
 		B2BB7B512918F169005592D4 = {
 			isa = PBXGroup;
 			children = (
@@ -59,6 +78,7 @@
 				B2BB7B5F2918F169005592D4 /* ContentView.swift */,
 				B2BB7B6B2918F189005592D4 /* RealtimeDataView.swift */,
 				B2BB7B6D2918F756005592D4 /* MotionModel.swift */,
+				B22368C929195C600035315A /* Rows */,
 				B2BB7B612918F16B005592D4 /* Assets.xcassets */,
 				B2BB7B632918F16B005592D4 /* Preview Content */,
 			);
@@ -145,8 +165,12 @@
 			files = (
 				B2BB7B602918F169005592D4 /* ContentView.swift in Sources */,
 				B2BB7B6C2918F189005592D4 /* RealtimeDataView.swift in Sources */,
+				B22368D12919612F0035315A /* HeadingRowView.swift in Sources */,
+				B22368CD29195CD40035315A /* CoordinatesView.swift in Sources */,
 				B2BB7B5E2918F169005592D4 /* MotionPredictorApp.swift in Sources */,
+				B22368CB29195C720035315A /* RowView.swift in Sources */,
 				B2BB7B6E2918F756005592D4 /* MotionModel.swift in Sources */,
+				B22368CF2919603E0035315A /* AttitudeRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

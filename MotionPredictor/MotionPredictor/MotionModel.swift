@@ -7,26 +7,21 @@
 
 import CoreMotion
 
+typealias Attitude = (pitch: Double, roll: Double, yaw: Double)
+typealias Coordinates = (x: Double, y: Double, z: Double)
+typealias Acceleration = Coordinates
+typealias MagneticField = Coordinates
+typealias RotationRate = Coordinates
+
 final class MotionModel: CMMotionManager, ObservableObject {
     // MARK: - Properties
 
-    @Published var attitude: CMAttitude = .init()
-    @Published var gravity: CMAcceleration = .init()
-    @Published var heading: Double = .init()
-    @Published var magneticField: CMCalibratedMagneticField = .init()
-    @Published var rotationRate: CMRotationRate = .init()
-    @Published var userAcceleration: CMAcceleration = .init()
-
-    var data: [String] {
-        return [
-            "Attitude: \(attitude)",
-            "Gravity: \(gravity)",
-            "Heading: \(heading)",
-            "MagneticField: \(magneticField)",
-            "RotationRate: \(rotationRate)",
-            "UserAcceleration: \(userAcceleration)"
-        ]
-    }
+    @Published var attitude: Attitude?
+    @Published var gravity: Acceleration?
+    @Published var heading: Double?
+    @Published var magneticField: MagneticField?
+    @Published var rotationRate: RotationRate?
+    @Published var userAcceleration: Acceleration?
 
     // MARK: - Constructor
 
@@ -46,10 +41,26 @@ final class MotionModel: CMMotionManager, ObservableObject {
     // MARK: - Private properties
 
     private func update(with motion: CMDeviceMotion) {
-        attitude = motion.attitude
+        attitude = (pitch: motion.attitude.pitch,
+                    roll: motion.attitude.roll,
+                    yaw: motion.attitude.yaw)
+
+        gravity = (x: motion.gravity.x,
+                   y: motion.gravity.y,
+                   z: motion.gravity.z)
+
         heading = motion.heading
-        magneticField = motion.magneticField
-        rotationRate = motion.rotationRate
-        userAcceleration = motion.userAcceleration
+
+        magneticField = (x: motion.magneticField.field.x,
+                         y: motion.magneticField.field.y,
+                         z: motion.magneticField.field.z)
+
+        rotationRate = (x: motion.rotationRate.x,
+                        y: motion.rotationRate.y,
+                        z: motion.rotationRate.z)
+
+        userAcceleration = (x: motion.userAcceleration.x,
+                            y: motion.userAcceleration.y,
+                            z: motion.userAcceleration.z)
     }
 }
