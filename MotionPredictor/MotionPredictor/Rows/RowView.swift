@@ -21,6 +21,8 @@ struct RowView: View {
             Image(systemName: imageName)
 
             Text(title)
+            
+            Spacer()
 
             if let coordinates = coordinates {
                 CoordinatesView(coordinates: coordinates)

@@ -17,17 +17,20 @@ struct CoordinatesView: View {
     var body: some View {
         HStack {
             VStack {
-                Text(String(describing: coordinates.x))
+                Text(coordinates.x.description.prefix(7))
                 Text("X")
             }
+            Spacer()
             VStack {
-                Text(String(describing: coordinates.y))
+                Text(coordinates.y.description.prefix(7))
                 Text("Y")
             }
+            Spacer()
             VStack {
-                Text(String(describing: coordinates.z))
+                Text(coordinates.z.description.prefix(7))
                 Text("Z")
             }
+            Spacer()
         }
     }
 }
