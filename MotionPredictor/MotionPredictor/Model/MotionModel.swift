@@ -36,6 +36,7 @@ final class MotionModel: CMMotionManager, ObservableObject {
 
     func startRecording() {
         isRecording = true
+        clearData()
     }
 
     func stopRecording() {
@@ -119,6 +120,10 @@ final class MotionModel: CMMotionManager, ObservableObject {
                       rotationRate: rotationRate,
                       userAcceleration: userAcceleration)
         data.append(record)
+    }
+
+    private func clearData() {
+        data = []
     }
 
     // MARK: - Private properties
